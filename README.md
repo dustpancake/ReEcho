@@ -2,7 +2,7 @@
 
 ![sample-output](https://github.com/Dustpancake/ReEcho/blob/master/header.png)
 
-Features:
+### Features:
 
 - Lesson selector for a given course
 - Fast and high quality download
