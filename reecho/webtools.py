@@ -75,6 +75,4 @@ class HomeParse():
 		return self._fetch(syllabus)
 
 	def _fetch(self, url):
-		resp = self._session.get(url)
-		print(self._session.headers)
-		return resp		
+		return self._session.get(url)	
