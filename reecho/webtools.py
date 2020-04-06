@@ -22,6 +22,7 @@ class Lesson:
 class HomeParse():
 	def __init__(self, session, url, headers={}):
 		self._session = session
+		self._session.headers.update(headers)
 		self._url = url
 		self._headers=headers
 		self._lessons = []
@@ -74,5 +75,6 @@ class HomeParse():
 		return self._fetch(syllabus)
 
 	def _fetch(self, url):
-		return self._session.get(url, headers=self._headers)
-		
+		resp = self._session.get(url)
+		print(self._session.headers)
+		return resp		
